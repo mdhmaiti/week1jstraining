@@ -1,0 +1,173 @@
+/* Reset some spacing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Selector List Demo */
+.selector-demo {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.selector-demo li {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.selector-demo li:hover {
+  background-color: #e0f7fa;
+  cursor: pointer;
+}
+
+.selector-demo li:first-child {
+  font-weight: bold;
+  color: red;
+}
+
+.selector-demo li:last-child {
+  font-weight: bold;
+  color: green;
+}
+
+.hover-btn {
+  padding: 10px 20px;
+  background-color: #009688;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.hover-btn:hover {
+  background-color: #00695c;
+}
+
+/* Flexbox Styling */
+.flex-more {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.flex-more .box {
+  background-color: #26a69a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  flex: 1 0 120px;
+  border-radius: 8px;
+}
+
+/* Grid Styling */
+.grid-more {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.grid-more .g {
+  background-color: #7e57c2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-more {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hover-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-more {
+    grid-template-columns: 1fr;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+/* Complex Grid Layout */
+.complex-grid {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar content extra"
+    "footer footer footer";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto 300px auto;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.complex-grid .item {
+  background-color: #ffb74d;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.complex-grid .header {
+  grid-area: header;
+  background-color: #42a5f5;
+  color: white;
+}
+
+.complex-grid .sidebar {
+  grid-area: sidebar;
+  background-color: #66bb6a;
+  color: white;
+}
+
+.complex-grid .content {
+  grid-area: content;
+  background-color: #ab47bc;
+  color: white;
+}
+
+.complex-grid .extra {
+  grid-area: extra;
+  background-color: #26c6da;
+  color: white;
+}
+
+.complex-grid .footer {
+  grid-area: footer;
+  background-color: #ef5350;
+  color: white;
+}
+@media (max-width: 768px) {
+  .complex-grid {
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "content"
+      "extra"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}

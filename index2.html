@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Fundamentals Demo</title>
+
+    <!-- Internal CSS  -->
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9fb;
+      }
+
+      header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      main {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      section {
+        margin-bottom: 3rem;
+        background: #fff;
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      h2 {
+        color: #34495e;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 0.5rem;
+      }
+
+      .box-model {
+        width: 300px;
+        padding: 20px;
+        margin: 10px auto;
+        border: 5px solid #333;
+        background-color: #fff;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .flexbox-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: #e3f2fd;
+        border-radius: 8px;
+      }
+
+      .flex-item {
+        width: 100px;
+        height: 100px;
+        background-color: #42a5f5;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        background-color: #f0f4c3;
+        border-radius: 8px;
+      }
+
+      .grid-item {
+        background-color: #8bc34a;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+      }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CSS Fundamentals Demo</h1>
+      <p>Day 2: Selectors, Layouts & Styling</p>
+    </header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/">Medhashis</a>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#work">Work</a></li>
+        <li><a href="/#skills">Skills</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a href="index2.html">Day 2</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+
+    <main>
+      <section>
+        <h2>1. Inline CSS Example</h2>
+        <p style="color: green; font-size: 18px">
+          This paragraph uses inline CSS for color and font size.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Internal CSS - Box Model</h2>
+        <div class="box-model">
+          This box demonstrates the CSS box model with margin, border, padding,
+          and content.
+        </div>
+      </section>
+
+      <section>
+        <h2>3. Flexbox Example</h2>
+        <div class="flexbox-container">
+          <div class="flex-item">1</div>
+          <div class="flex-item">2</div>
+          <div class="flex-item">3</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>4. Grid Example</h2>
+        <div class="grid-container">
+          <div class="grid-item">A</div>
+          <div class="grid-item">B</div>
+          <div class="grid-item">C</div>
+          <div class="grid-item">D</div>
+          <div class="grid-item">E</div>
+          <div class="grid-item">F</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>5. Selectors & Pseudo-Classes</h2>
+        <ul class="selector-demo">
+          <li>Apple</li>
+          <li>Banana</li>
+          <li>Mango</li>
+          <li>Orange</li>
+        </ul>
+        <button class="hover-btn">Hover Me</button>
+      </section>
+
+      <section>
+        <h2>6. More Flexbox & Grid Examples</h2>
+        <div class="flex-more">
+          <div class="box">A</div>
+          <div class="box">B</div>
+          <div class="box">C</div>
+          <div class="box">D</div>
+        </div>
+
+        <div class="grid-more">
+          <div class="g">1</div>
+          <div class="g">2</div>
+          <div class="g">3</div>
+          <div class="g">4</div>
+          <div class="g">5</div>
+          <div class="g">6</div>
+        </div>
+      </section>
+      <section>
+        <h2>7. Complex Grid Layout Example</h2>
+        <div class="complex-grid">
+          <div class="item header">Header</div>
+          <div class="item sidebar">Sidebar</div>
+          <div class="item content">Main Content</div>
+          <div class="item extra">Extra Content</div>
+          <div class="item footer">Footer</div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medhashis | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/">Medhashis</a>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#work">Work</a></li>
+        <li><a href="/#skills">Skills</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a href="/index2.html">Day 2</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-content">
+          <img
+            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?fit=crop&w=300&h=300&q=80"
+            {{--
+            Using
+            a
+            free
+            stock
+            photo
+            portrait
+            --}}
+            alt="Profile Picture of Medhashis Maiti"
+            class="profile-pic"
+          />
+          <div class="about-text">
+            <h1>Welcome to My Portfolio</h1>
+            <p>
+              Hello! I'm Medhashis Maiti, a passionate developer and designer
+              with a knack for turning ideas into reality. I love creating
+              engaging websites, robust applications, and solving complex
+              problems through clean, efficient code. Explore my work below to
+              see how I can help bring your next project to life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section work-section">
+      <div class="container">
+        <h2>Overview</h2>
+        <div class="projects-overview">
+          <p>
+            Here is a brief overview of the
+            technologies used:
+          </p>
+          <p>
+            Projects can be found on github;
+          </p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Technologies</th>
+                <th>Technology Stack</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Frontend</td>
+                <td>HTML, CSS, JavaScript, TypeScript React js, Next js, Tailwind css, Zustand</td>
+                <td>2023</td>
+              </tr>
+              <tr>
+                <td>Backend</td>
+                <td>Laravel, PHP, Node js, MySQL, Express js, Elequont</td>
+                <td>2023</td>
+              </tr>
+              <tr>
+                <td>Deployment</td>
+                <td>AWS EC2, Vercel, Netlify</td>
+                <td>2023</td>
+              </tr>
+              <tr>
+                <td>Tools and Languages</td>
+                <td> Linux, Docker, Neovim, VS code</td>
+                <td>2023</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <h2>My Tech Stacks</h2>
+        <div class="tech-stacks-container">
+          <div class="tech-stack-group">
+            <h3>MERN Stack</h3>
+            <div class="tech-stack-icons">
+              <img
+                src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg"
+                alt="MongoDB Logo"
+                title="MongoDB"
+              />
+              <img
+                src="https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000"
+                alt="Express.js Logo"
+                title="Express.js"
+              />
+              <img
+                src="https://cdn.worldvectorlogo.com/logos/react-2.svg"
+                alt="React Logo"
+                title="React"
+              />
+              <img
+                src="https://cdn.worldvectorlogo.com/logos/nodejs-1.svg"
+                alt="Node.js Logo"
+                title="Node.js"
+              />
+            </div>
+          </div>
+          <div class="tech-stack-group">
+            <h3>LAMP Stack</h3>
+            <div class="tech-stack-icons">
+              <img
+                src="https://cdn.worldvectorlogo.com/logos/linux-tux.svg"
+                alt="Linux Logo"
+                title="Linux"
+              />
+              <img
+                src="https://img.icons8.com/?size=100&id=OrZMxhqm7nsr&format=png&color=000000"
+                alt="Apache HTTP Server Logo"
+                title="Apache HTTP Server"
+              />
+              <img
+                src="https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000"
+                alt="MySQL Logo"
+                title="MySQL"
+              />
+              <img
+                src="https://img.icons8.com/?size=100&id=fAMVO_fuoOuC&format=png&color=000000"
+                alt="PHP Logo"
+                title="PHP"
+              />
+              <img
+                src="https://img.icons8.com/?size=100&id=hUvxmdu7Rloj&format=png&color=000000"
+"
+                alt="Laravel Logo"
+                title="Laravel"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <p>
+      Have a project in mind or just want to say hello? Feel free to reach
+      out!
+    </p>
+<form class="contact-form" id="contactForm" novalidate>
+  <input type="text" id="name" name="name" placeholder="Your Name" required />
+  <small class="error-message" id="nameError"></small>
+
+  <input type="email" id="email" name="email" placeholder="Your Email" required />
+  <small class="error-message" id="emailError"></small>
+
+  <textarea
+    id="message"
+    name="message"
+    rows="6"
+    placeholder="Your Message"
+    required
+  ></textarea>
+  <small class="error-message" id="messageError"></small>
+
+  <button type="submit" id="submitBtn">
+    <span class="btn-text">Send Message</span>
+    <span class="btn-loader" style="display: none;"></span>
+  </button>
+</form>
+  </div>
+</section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Medhashis Maiti. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            aria-label="LinkedIn Profile"
+            >LinkedIn</a
+          >
+          |
+          <a
+            href="https://github.com"
+            target="_blank"
+            aria-label="GitHub Profile"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
